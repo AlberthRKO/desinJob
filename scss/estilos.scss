@@ -1,0 +1,40 @@
+// Definimos las variables que queremos modificar antes de llamar al bootstrap
+
+/* ---------------
+* 1.- Patron de colores
+---------------- */
+
+$principal: #186adc;
+$secondary: #303036;
+$gradient1: #1859b4;
+$gradient2: #0467f1;
+$text-primary: #303036;
+$text-secondary: #63636b;
+$primary-color: #ffffff;
+$bg-color: #f0f4f8;
+
+// * Modificando variables de bootstrap
+
+// $primary: $principal;
+// $enable-shadows: true;
+// $enable-gradients: true;
+$body-color: $text-primary;
+$font-family-base: "Istok Web", sans-serif;
+$theme-colors: (
+  "primary": $principal,
+  "secondary": $secondary,
+  "light": $bg-color,
+  "dark": $text-secondary,
+);
+
+// $btn-padding-y: 0.8rem;
+// $btn-padding-x: 1.5rem;
+// $btn-border-radius: 1rem;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+// * Aqui ponemos las modificaciones personalizadas
+
+.btn-primary {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.27);
+}
